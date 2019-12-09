@@ -1,0 +1,36 @@
+1. Update Database Schema
+
+php app/console doctrine:schema:update --force
+
+2. Create Repository and update entity relationship
+ 
+php app/console doctrine:generate:entities iSecureBundle
+
+3. Clear Cache
+
+php app/console cache:clear --env=prod --no-debug
+
+4. Remove Bundle
+
+It is basically the process you have outlined, only in somewhat different order.
+delete /src/Test/BlogBundle directory
+change /app/config/routing.yml file to remove the bundle routes
+remove your new bundle from /app/AppKernel.php
+clear cache (either by deleting cache/{$env} or console cache:clear)
+
+5. To create a Controller
+
+$ php app/console generate:controller
+
+6. To create a CRUD
+
+7. Virtual host to remove /web folder, change file httpd-vhosts in detalis below:  
+DocumentRoot "C:/xampp/htdocs/SentricAPI/web"
+
+8. Create Bundle
+php app/console generate:bundle --bundle-name=Sentric/iSecureBundle
+
+9. Resolve the service container not found issue, import the service path into config.yml file
+# app/config/config.yml
+imports:
+    - { resource: "@AcmeHelloBundle/Resources/config/services.yml" }

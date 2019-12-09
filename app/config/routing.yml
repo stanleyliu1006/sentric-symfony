@@ -1,0 +1,11 @@
+isecure:
+    resource: "@iSecureBundle/Resources/config/routing.yml"
+    prefix:   /
+
+people_manager:
+    resource: "@PeopleManagerBundle/Resources/config/routing.yml"
+    prefix:   /
+
+contract_manager:
+    resource: "@ContractManagerBundle/Resources/config/routing.yml"
+    prefix:   /

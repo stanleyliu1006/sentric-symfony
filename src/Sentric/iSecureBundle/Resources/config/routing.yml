@@ -1,0 +1,4 @@
+sentric_isecure_saveasset:
+    path:     /isecure/asset/save
+    defaults: { _controller: iSecureBundle:Asset:save }            
+    

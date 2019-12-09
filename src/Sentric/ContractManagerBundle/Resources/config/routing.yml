@@ -1,0 +1,3 @@
+sentric_contractmanager_checklistsave:
+    path:     /contractmanager/checklist/save
+    defaults: { _controller: ContractManagerBundle:Checklist:save }            

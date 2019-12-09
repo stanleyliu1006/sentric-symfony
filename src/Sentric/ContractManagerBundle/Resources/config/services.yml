@@ -1,0 +1,7 @@
+services:
+    checklistservice:
+        class:        Sentric\ContractManagerBundle\Service\ChecklistService
+        arguments:   [@doctrine.orm.sentric_contract_entity_manager]        
+    knackchecklistservice:
+        class:        Sentric\ContractManagerBundle\Service\KnackChecklistService
+        arguments:   [%knack_ChecklistAPPID%, %knack_ChecklistAPIKey%]      

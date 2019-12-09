@@ -1,0 +1,4 @@
+services:
+    knacktimesheetservice:
+        class:        Sentric\PeopleManagerBundle\Service\KnackTimesheetService
+        arguments:   [%knack_PM_APPID%, %knack_PM_APIKey%]     

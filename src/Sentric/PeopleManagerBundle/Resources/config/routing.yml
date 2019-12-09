@@ -1,0 +1,4 @@
+sentric_peoplemanager_timesheetcreatebatch:
+    path:     /peoplemanager/timesheet/createbatch
+    defaults: { _controller: PeopleManagerBundle:Timesheet:createbatch }            
+    

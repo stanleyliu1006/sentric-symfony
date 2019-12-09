@@ -1,0 +1,7 @@
+services:
+    assetservice:
+        class:        Sentric\iSecureBundle\Service\AssetService
+        arguments:   [@doctrine.orm.sentric_isecure_entity_manager]       
+    knackassetservice:
+        class:        Sentric\iSecureBundle\Service\KnackAssetService
+        arguments:   [%knack_AssetAPPID%, %knack_AssetAPIKey%]
